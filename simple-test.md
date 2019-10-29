@@ -8,5 +8,9 @@ Para
 | Content Cell b1 | Content Cell b2 |
 
 ::: warning
-*here be dragons*
+here be dragons
 :::
+
+@startuml
+Bob -> Alice : hello
+@enduml

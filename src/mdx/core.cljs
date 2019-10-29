@@ -3,6 +3,7 @@
             [markdown-it :as md-it]
             [markdown-it-include :as md-it-inc]
             [markdown-it-headinganchor :as md-it-ha]
+            [markdown-it-plantuml :as md-it-puml]
             [markdown-it-container :as md-it-cont]
             [markdown-it-footnote :as md-it-foot]))
 
@@ -15,7 +16,8 @@
 
 (let [md (doto (md-it #js {:linkify true})
            #_(.use md-it-foot)
-           #_(.use md-it-cont "bla")
+           (.use md-it-cont "warning")
+           (.use md-it-puml)
            (.use md-it-ha)
            (.use md-it-inc #js {:includeRe include-regex}))]
   (let [parsed (.parse md (io/slurp "simple-test.md"))]
