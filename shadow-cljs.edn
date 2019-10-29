@@ -1,0 +1,13 @@
+;; shadow-cljs configuration
+{:source-paths
+ ["src"]
+
+ :dependencies
+ [[cljs-node-io "1.1.2"]]
+
+ :builds
+ {:app {:target :node-script
+        :output-dir "public/js"
+        :output-to "public/js/main.js"
+        :main mdx.core/init
+        :modules {:main {:entries [mdx.core]}}}}}
