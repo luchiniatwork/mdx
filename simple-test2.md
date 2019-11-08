@@ -74,6 +74,7 @@ code block to be sent
 with parameters:
 
 `!my-plugin/my-fn({param1=3,param2=4,param3=5})`
+
 ```
 code block to be sent
 ```
@@ -86,6 +87,7 @@ with multi-line parameters:
  param2=4,
  param3=5}
 ```
+
 ```
 code block to be sent
 ```
@@ -97,6 +99,7 @@ code block to be sent
 without parameters:
 
 `!my-plugin/my-fn`
+
 ```
 code block to be sent
 ```
@@ -104,6 +107,7 @@ code block to be sent
 with parameters:
 
 `!my-plugin/my-fn({param1=3,param2=4,param3=5})`
+
 ```
 code block to be sent
 ```
@@ -127,6 +131,7 @@ code block to be sent
 ex1 (code block):
 
 `.code-name-A This code is dope`
+
 ```
 target code here
 ```
@@ -134,6 +139,7 @@ target code here
 ex2 (other sort of blocks - table i.e.):
 
 `.my-table-name This table is awesome`
+
 | First Header    | Second Header   |
 | -------------   | -------------   |
 | Content Cell a1 | Content Cell b1 |
@@ -142,6 +148,7 @@ ex2 (other sort of blocks - table i.e.):
 ex3 (description is optional):
 
 `.a-table`
+
 | First Header    | Second Header   |
 | -------------   | -------------   |
 | Content Cell a1 | Content Cell b1 |
